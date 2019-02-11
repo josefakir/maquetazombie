@@ -1,0 +1,9 @@
+.ios .page {background:none !important;}
+#home{background: url(../img/zombie1.jpg) !important; background-size: cover !important;}
+.fotozombie{width: 150px; border-radius: 75px; display: block; margin:20px auto}
+.blanco{color: #fff}
+.tac{text-align: center}
+.login-screen-content{
+background: url(../img/zombie3.jpg) !important; background-size: cover !important;}
+#dashboard{background: url(../img/zombie3.jpg) !important; background-size: cover !important;}
+.tac{text-align: center;}

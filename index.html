@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#2196f3">
+	<title>Zombie</title>
+	<link rel="stylesheet" href="node_modules/framework7/css/framework7.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="app">
+		<div class="statusbar"></div>
+		<div class="view view-main">
+			<div data-name="home" class="page" id="home">
+				<div class="page-content">
+			      <div class="block">
+					<p>
+						<img src="img/zombie2.jpg" alt="" class="fotozombie">
+					</p>
+					<h1 class="blanco tac">¿Soy Zombie?</h1>
+					<p class="blanco tac">9 pasos para superar el estado de muerto viviente</p>
+			        <p>
+			          <a href="#" class="col button button-fill color-green login-screen-open" data-login-screen=".inicio-sesion">Iniciar Sesión</a>
+			        </p>
+					<p>
+			          <a href="#" class="col button button-fill color-orange login-screen-open" data-login-screen=".register-screen">Registrarme</a>
+			        </p>
+					<p> <button class="col button button-fill color-blue">Iniciar con Facebook</button></p>
+			      </div>
+			    </div>
+			</div>
+			<div class="login-screen inicio-sesion">
+			    <div class="view">
+					<div class="page">
+				        <div class="page-content login-screen-content">
+					        <div class="login-screen-title blanco">Iniciar sesión</div>
+					        <form>
+			            	<div class="list">
+			              		<ul>
+					                <li class="item-content item-input">
+					                  <div class="item-inner">
+					                    <div class="item-title item-label blanco">Correo</div>
+					                    <div class="item-input-wrap">
+					                      <input type="email" name="username" placeholder="Tu correo">
+					                    </div>
+					                  </div>
+					                </li>
+					                <li class="item-content item-input">
+					                  <div class="item-inner">
+					                    <div class="item-title item-label blanco">Contraseña</div>
+					                    <div class="item-input-wrap">
+					                      <input type="password" name="password" placeholder="Tu contraseña">
+					                    </div>
+					                  </div>
+					                </li>
+			              		</ul>
+			            	</div>
+				            <div class="list">
+				              <div class="block-footer">
+								  <p><a class="col button button-fill color-green login-screen-close" href="/dashboard/">Iniciar Sesión</a></p>
+				                <p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
+				              </div>
+				            </div>
+			          		</form>
+			        	</div>
+			      	</div>
+			    </div>
+			</div>
+			<div class="login-screen register-screen">
+			    <div class="view">
+					<div class="page">
+				        <div class="page-content login-screen-content">
+					        <div class="login-screen-title blanco">Regístrate</div>
+					        <form>
+			            	<div class="list">
+			              		<ul>
+					                <li class="item-content item-input">
+					                  <div class="item-inner">
+					                    <div class="item-title item-label blanco">Correo</div>
+					                    <div class="item-input-wrap">
+					                      <input type="email" name="username" placeholder="Tu correo">
+					                    </div>
+					                  </div>
+					                </li>
+									<li class="item-content item-input">
+					                  <div class="item-inner">
+					                    <div class="item-title item-label blanco">Nombre completo</div>
+					                    <div class="item-input-wrap">
+					                      <input type="text" name="username" placeholder="Tu nombre completo">
+					                    </div>
+					                  </div>
+					                </li>
+					                <li class="item-content item-input">
+					                  <div class="item-inner">
+					                    <div class="item-title item-label blanco">Contraseña</div>
+					                    <div class="item-input-wrap">
+					                      <input type="password" name="password" placeholder="Tu contraseña">
+					                    </div>
+					                  </div>
+					                </li>
+			              		</ul>
+			            	</div>
+				            <div class="list">
+				              <div class="block-footer">
+								  <p><a class="col button button-fill color-green" href="#">Registrarme</a></p>
+				                <p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
+				              </div>
+				            </div>
+			          		</form>
+			        	</div>
+			      	</div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
