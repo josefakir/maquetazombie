@@ -14,105 +14,121 @@
 	<div id="app">
 		<div class="statusbar"></div>
 		<div class="view view-main">
+			<!-- Right panel, with cover effect -->
+			<div class="panel panel-right panel-cover">
+				<div class="block">
+					<h2 style="color: #fff">Menú</h2>>
+					<p><a class="panel-close" href="/dashboard/"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></p>
+					<p><a class="panel-close" href="/gastos-fijos/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> Gastos Fijos</a></p>
+					<p><a class="panel-close" href="/gastos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> Gastos Variables</a></p>
+					<p><a class="panel-close" href="/ingresos-fijos/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-plus" aria-hidden="true"></i> Ingresos Fijos</a></p>
+					<p><a class="panel-close" href="/ingresos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-plus" aria-hidden="true"></i> Ingresos Variables</a></p>
+					<p><a class="panel-close" href="/metas/"><i class="fa fa-check-square" aria-hidden="true"></i> Metas</a></p>
+					<p><a class="panel-close" href="/recordatorios/"><i class="fa fa-clock-o" aria-hidden="true"></i> Recordatorios</a></p>
+					<p><a class="panel-close" href="/configuracion/"><i class="fa fa-cog" aria-hidden="true"></i> Configuracion</a></p>
+					<p><a class="panel-close" id="logout" href="javascript:void(0);"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></p>
+					<p><a class="panel-close" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></p>
+				</div>
+			</div>
 			<div data-name="home" class="page" id="home">
 				<div class="page-content">
-			      <div class="block">
-					<p>
-						<img src="img/zombie2.jpg" alt="" class="fotozombie">
-					</p>
-					<h1 class="blanco tac">¿Soy Zombie?</h1>
-					<p class="blanco tac">9 pasos para superar el estado de muerto viviente</p>
-			        <p>
-			          <a href="#" class="col button button-fill color-green login-screen-open" data-login-screen=".inicio-sesion">Iniciar Sesión</a>
-			        </p>
-					<p>
-			          <a href="#" class="col button button-fill color-orange login-screen-open" data-login-screen=".register-screen">Registrarme</a>
-			        </p>
-					<p> <button class="col button button-fill color-blue">Iniciar con Facebook</button></p>
-			      </div>
-			    </div>
+					<div class="block">
+						<p>
+							<img src="img/zombie2.jpg" alt="" class="fotozombie">
+						</p>
+						<h1 class="blanco tac">¿Soy Zombie?</h1>
+						<p class="blanco tac">9 pasos para superar el estado de muerto viviente</p>
+						<p>
+							<a href="#" class="col button button-fill color-green login-screen-open" data-login-screen=".inicio-sesion">Iniciar Sesión</a>
+						</p>
+						<p>
+							<a href="#" class="col button button-fill color-orange login-screen-open" data-login-screen=".register-screen">Registrarme</a>
+						</p>
+						<p> <button class="col button button-fill color-blue">Iniciar con Facebook</button></p>
+					</div>
+				</div>
 			</div>
 			<div class="login-screen inicio-sesion">
-			    <div class="view">
+				<div class="view">
 					<div class="page">
-				        <div class="page-content login-screen-content">
-					        <div class="login-screen-title blanco">Iniciar sesión</div>
-					        <form>
-			            	<div class="list">
-			              		<ul>
-					                <li class="item-content item-input">
-					                  <div class="item-inner">
-					                    <div class="item-title item-label blanco">Correo</div>
-					                    <div class="item-input-wrap">
-					                      <input type="email" name="username" placeholder="Tu correo">
-					                    </div>
-					                  </div>
-					                </li>
-					                <li class="item-content item-input">
-					                  <div class="item-inner">
-					                    <div class="item-title item-label blanco">Contraseña</div>
-					                    <div class="item-input-wrap">
-					                      <input type="password" name="password" placeholder="Tu contraseña">
-					                    </div>
-					                  </div>
-					                </li>
-			              		</ul>
-			            	</div>
-				            <div class="list">
-				              <div class="block-footer">
-								  <p><a class="col button button-fill color-green login-screen-close" href="/dashboard/">Iniciar Sesión</a></p>
-				                <p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
-				              </div>
-				            </div>
-			          		</form>
-			        	</div>
-			      	</div>
-			    </div>
+						<div class="page-content login-screen-content">
+							<div class="login-screen-title blanco">Iniciar sesión</div>
+							<form>
+								<div class="list">
+									<ul>
+										<li class="item-content item-input">
+											<div class="item-inner">
+												<div class="item-title item-label blanco">Correo</div>
+												<div class="item-input-wrap">
+													<input type="email" name="username" placeholder="Tu correo">
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input">
+											<div class="item-inner">
+												<div class="item-title item-label blanco">Contraseña</div>
+												<div class="item-input-wrap">
+													<input type="password" name="password" placeholder="Tu contraseña">
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="list">
+									<div class="block-footer">
+										<p><a class="col button button-fill color-green login-screen-close" href="/dashboard/">Iniciar Sesión</a></p>
+										<p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="login-screen register-screen">
-			    <div class="view">
+				<div class="view">
 					<div class="page">
-				        <div class="page-content login-screen-content">
-					        <div class="login-screen-title blanco">Regístrate</div>
-					        <form>
-			            	<div class="list">
-			              		<ul>
-					                <li class="item-content item-input">
-					                  <div class="item-inner">
-					                    <div class="item-title item-label blanco">Correo</div>
-					                    <div class="item-input-wrap">
-					                      <input type="email" name="username" placeholder="Tu correo">
-					                    </div>
-					                  </div>
-					                </li>
-									<li class="item-content item-input">
-					                  <div class="item-inner">
-					                    <div class="item-title item-label blanco">Nombre completo</div>
-					                    <div class="item-input-wrap">
-					                      <input type="text" name="username" placeholder="Tu nombre completo">
-					                    </div>
-					                  </div>
-					                </li>
-					                <li class="item-content item-input">
-					                  <div class="item-inner">
-					                    <div class="item-title item-label blanco">Contraseña</div>
-					                    <div class="item-input-wrap">
-					                      <input type="password" name="password" placeholder="Tu contraseña">
-					                    </div>
-					                  </div>
-					                </li>
-			              		</ul>
-			            	</div>
-				            <div class="list">
-				              <div class="block-footer">
-								  <p><a class="col button button-fill color-green" href="#">Registrarme</a></p>
-				                <p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
-				              </div>
-				            </div>
-			          		</form>
-			        	</div>
-			      	</div>
-			    </div>
+						<div class="page-content login-screen-content">
+							<div class="login-screen-title blanco">Regístrate</div>
+							<form>
+								<div class="list">
+									<ul>
+										<li class="item-content item-input">
+											<div class="item-inner">
+												<div class="item-title item-label blanco">Correo</div>
+												<div class="item-input-wrap">
+													<input type="email" name="username" placeholder="Tu correo">
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input">
+											<div class="item-inner">
+												<div class="item-title item-label blanco">Nombre completo</div>
+												<div class="item-input-wrap">
+													<input type="text" name="username" placeholder="Tu nombre completo">
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input">
+											<div class="item-inner">
+												<div class="item-title item-label blanco">Contraseña</div>
+												<div class="item-input-wrap">
+													<input type="password" name="password" placeholder="Tu contraseña">
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="list">
+									<div class="block-footer">
+										<p><a class="col button button-fill color-green" href="#">Registrarme</a></p>
+										<p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

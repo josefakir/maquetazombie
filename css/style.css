@@ -15,7 +15,13 @@ background: url(../img/zombie3.jpg) !important; background-size: cover !importan
 }
 .toolbar{
 	background: #ff9500 !important
-
+}
+.navbar{
+	background: #ff9500 !important;
+	color: #fff;
+}
+.ios .navbar a.link{
+	color: #fff !important;
 }
 .ios .toolbar a.link {
     line-height: 44px;
@@ -48,3 +54,28 @@ ul#progreso {
     font-weight: bold;
     text-align: center;
 }
+.ios .icon-back, .ios .icon-prev {
+    background-image: url(../img/izq.svg)
+}
+
+.ios .list ul {
+    background: transparent;
+}
+.panel-right{
+        background: #155c71 !important;
+
+}
+.panel-right a {color: #fff;}
+.ios .button.button-fill, .ios .button.button-fill-ios {
+    color: #fff;
+    background: #ff9500;
+    border-color: transparent;
+}
+#foto_perfil{
+        width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 0 auto;
+    display: block;
+}
+.tac{text-align: center}
