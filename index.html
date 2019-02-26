@@ -19,14 +19,14 @@
 				<div class="block">
 					<h2 style="color: #fff">Menú</h2>>
 					<p><a class="panel-close" href="/dashboard/"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></p>
-					<p><a class="panel-close" href="/gastos-fijos/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> Gastos Fijos</a></p>
-					<p><a class="panel-close" href="/gastos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> Gastos Variables</a></p>
+					<p><a class="panel-close" href="/salud-financiera/"><i class="fa fa-money" aria-hidden="true"></i> Salud Financiera</a></p>
+					<!--<p><a class="panel-close" href="/gastos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-minus" aria-hidden="true"></i> Gastos Variables</a></p>
 					<p><a class="panel-close" href="/ingresos-fijos/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-plus" aria-hidden="true"></i> Ingresos Fijos</a></p>
-					<p><a class="panel-close" href="/ingresos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-plus" aria-hidden="true"></i> Ingresos Variables</a></p>
+					<p><a class="panel-close" href="/ingresos-variables/"><i class="fa fa-money" aria-hidden="true"></i> <i class="fa fa-plus" aria-hidden="true"></i> Ingresos Variables</a></p>-->
 					<p><a class="panel-close" href="/metas/"><i class="fa fa-check-square" aria-hidden="true"></i> Metas</a></p>
 					<p><a class="panel-close" href="/recordatorios/"><i class="fa fa-clock-o" aria-hidden="true"></i> Recordatorios</a></p>
 					<p><a class="panel-close" href="/configuracion/"><i class="fa fa-cog" aria-hidden="true"></i> Configuracion</a></p>
-					<p><a class="panel-close" id="logout" href="javascript:void(0);"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></p>
+					<p><a class="panel-close" id="logout" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></p>
 					<p><a class="panel-close" href="#"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a></p>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 											<div class="item-inner">
 												<div class="item-title item-label blanco">Correo</div>
 												<div class="item-input-wrap">
-													<input type="email" name="username" placeholder="Tu correo">
+													<input type="email" name="login_correo" placeholder="Tu correo" id="login_correo">
 												</div>
 											</div>
 										</li>
@@ -68,7 +68,7 @@
 											<div class="item-inner">
 												<div class="item-title item-label blanco">Contraseña</div>
 												<div class="item-input-wrap">
-													<input type="password" name="password" placeholder="Tu contraseña">
+													<input type="password" name="login_password" placeholder="Tu contraseña" id="login_password">
 												</div>
 											</div>
 										</li>
@@ -76,7 +76,7 @@
 								</div>
 								<div class="list">
 									<div class="block-footer">
-										<p><a class="col button button-fill color-green login-screen-close" href="/dashboard/">Iniciar Sesión</a></p>
+										<p><a class="col button button-fill color-green login-screen-close" href="#" id="btn_login">Iniciar Sesión</a></p>
 										<p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
 									</div>
 								</div>
@@ -97,7 +97,7 @@
 											<div class="item-inner">
 												<div class="item-title item-label blanco">Correo</div>
 												<div class="item-input-wrap">
-													<input type="email" name="username" placeholder="Tu correo">
+													<input type="email" name="correo" placeholder="Tu correo" id="registro_correo">
 												</div>
 											</div>
 										</li>
@@ -105,7 +105,7 @@
 											<div class="item-inner">
 												<div class="item-title item-label blanco">Nombre completo</div>
 												<div class="item-input-wrap">
-													<input type="text" name="username" placeholder="Tu nombre completo">
+													<input type="text" name="nombre" placeholder="Tu nombre completo" id="registro_nombre">
 												</div>
 											</div>
 										</li>
@@ -113,7 +113,7 @@
 											<div class="item-inner">
 												<div class="item-title item-label blanco">Contraseña</div>
 												<div class="item-input-wrap">
-													<input type="password" name="password" placeholder="Tu contraseña">
+													<input type="password" name="password" placeholder="Tu contraseña" id="registro_password">
 												</div>
 											</div>
 										</li>
@@ -121,7 +121,7 @@
 								</div>
 								<div class="list">
 									<div class="block-footer">
-										<p><a class="col button button-fill color-green" href="#">Registrarme</a></p>
+										<p><a class="col button button-fill color-green" href="#" id="btn_registro">Registrarme</a></p>
 										<p><a class="link login-screen-close col button button-fill color-red" href="#">Cerrar</a></p>
 									</div>
 								</div>
@@ -132,6 +132,7 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -79,3 +79,8 @@ ul#progreso {
     display: block;
 }
 .tac{text-align: center}
+.ios .list input[type=date], .ios .list input[type=datetime-local], .ios .list input[type=email], .ios .list input[type=number], .ios .list input[type=password], .ios .list input[type=search], .ios .list input[type=tel], .ios .list input[type=text], .ios .list input[type=time], .ios .list input[type=url], .ios .list select {
+    height: 44px;
+    color: #fff;
+    font-size: 17px;
+}
